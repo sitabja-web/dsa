@@ -27,3 +27,21 @@
 // 0(n^2) => quadratic time => the execution time of an algorithm increases quadratically with the size of the input
 // 0(2^n) => exponential time => the execution time of an algorithm increases exponentially with the size of the input
 // 0(n!) => factorial time => the execution time of an algorithm increases factorially with the size
+
+
+
+// examle of various time complexities 
+
+// 1.linear time complexity
+// void linearTimeComplexity(int n) {
+//     for (int i = 0; i < n; i++) {
+//         cout << i << " ";
+//     }
+// }
+
+// 2.logarithmic time complexity
+// void logarithmicTimeComplexity(int n) {
+//     for (int i = 1; i < n; i *= 2) {
+//         cout << i << " ";
+//     }
+// }
