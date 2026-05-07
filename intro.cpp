@@ -45,3 +45,50 @@
 //         cout << i << " ";
 //     }
 // }
+
+// 3. quadratic time complexity
+// void quadraticTimeComplexity(int n) {
+//     for (int i = 0; i < n; i++) {
+//         for (int j = 0; j < n; j++) {
+//             cout << i << " " << j << " ";
+//         }
+//     }
+// }
+
+// 4. exponential time complexity
+// void exponentialTimeComplexity(int n) {
+//     if (n == 0) {
+//         cout << "Base case reached" << endl;
+//         return;
+//     }
+//     cout << "Current value of n: " << n << endl;
+//     exponentialTimeComplexity(n - 1);
+//     exponentialTimeComplexity(n - 1);
+// }
+
+// 5. factorial time complexity
+// void factorialTimeComplexity(int n) {
+//     if (n == 0) {
+//         cout << "Base case reached" << endl;
+//         return;
+//     }
+//     cout << "Current value of n: " << n << endl;
+//     for (int i = 0; i < n; i++) {
+//         factorialTimeComplexity(n - 1);
+//     }
+// 
+
+// 6. constant time complexity
+// void constantTimeComplexity() {
+//     cout << "This function runs in constant time." << endl;
+// }
+
+// space  complexity tells you how much e memroy an algorthim  uses as the  size of the input changes 
+
+// 0(1) => constant space => the memory usage of an algorithm does not depend on the size of the input
+// 0(n) => linear space => the memory usage of an algorithm increases linearly with
+// the size of the input
+// 0(n^2) => quadratic space => the memory usage of an algorithm increases quadratically with the size of the input
+// 0(2^n) => exponential space => the memory usage of an algorithm increases
+// exponentially with the size of the input
+
