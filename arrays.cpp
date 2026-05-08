@@ -36,3 +36,13 @@ int main() {
 
     return 0;
 }
+
+
+// Algorithm	Purpose
+// sort()	Sort elements
+// reverse()	Reverse vector
+// find()	Search element
+// count()	Count occurrences
+// binary_search()	Binary search
+// max_element()	Largest element
+// min_element()	Smallest element
