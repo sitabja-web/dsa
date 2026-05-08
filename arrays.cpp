@@ -15,3 +15,24 @@ int main() {
     return 0;
 }
 
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+
+    vector<int> v = {4, 2, 8, 1};
+
+    v.push_back(10);
+
+    sort(v.begin(), v.end());
+
+    for(int x : v) {
+        cout << x << " ";
+    }
+
+    return 0;
+}
