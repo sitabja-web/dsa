@@ -46,3 +46,24 @@ int main() {
 // binary_search()	Binary search
 // max_element()	Largest element
 // min_element()	Smallest element
+
+
+
+// #include <iostream>
+// #include <string>
+// #include <algorithm>
+
+// using namespace std;
+
+// int main() {
+
+//     string s = "hello";
+
+//     s.push_back('!');
+
+//     transform(s.begin(), s.end(), s.begin(), ::toupper);
+
+//     cout << s << endl;
+
+//     return 0;
+// }
