@@ -83,7 +83,11 @@
 //     cout << "This function runs in constant time." << endl;
 // }
 
-// space  complexity tells you how much e memroy an algorthim  uses as the  size of the input changes 
+// space  complexity tells you how much e memroy an algorthim  uses as the  size of the input changes
+//  space complexity is the summation of input szie + auxillary space used by the algorithm 
+
+//intput size => meory used to store the inout data
+// auxiillary sapce> memory used by the algorithm to perform its operations 
 
 // 0(1) => constant space => the memory usage of an algorithm does not depend on the size of the input
 // 0(n) => linear space => the memory usage of an algorithm increases linearly with
