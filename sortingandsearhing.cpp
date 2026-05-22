@@ -16,3 +16,8 @@ int main() {
 
     return 0;
 }
+
+//  vector way
+vector<int> v = {4, 1, 7, 2};
+
+sort(v.begin(), v.end());
