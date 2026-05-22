@@ -8,7 +8,7 @@ int main() {
 
     int n = 5;
 
-    sort(arr, arr + n);
+//     sort(arr, arr + n);     this is the best way of sorting tc = 0(nlogn)
 
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
