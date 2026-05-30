@@ -104,79 +104,86 @@ int main() {
     return 0;
 }
 
-
 #include <iostream>
+#include <list>
 using namespace std;
+
+
+//   stack using ll 
+
 
 class Stack {
 private:
-    int arr[100];
-    int topIndex;
+    list<int> ll;
 
 public:
-    Stack() {
-        topIndex = -1;
+    void push(int val) { // O(1)
+        ll.push_front(val);
     }
 
-    void push(int val) {
-        if (topIndex == 99) {
-            cout << "Stack Overflow" << endl;
-            return;
-        }
-
-        arr[++topIndex] = val;
-    }
-
-    void pop() {
-        if (topIndex == -1) {
+    void pop() { // O(1)
+        if (ll.empty()) {
             cout << "Stack Underflow" << endl;
             return;
         }
-
-        topIndex--;
+        ll.pop_front();
     }
 
-    int top() {
-        if (topIndex == -1) {
+    int top() { // O(1)
+        if (ll.empty()) {
             cout << "Stack is Empty" << endl;
             return -1;
         }
-
-        return arr[topIndex];
+        return ll.front();
     }
 
     bool empty() {
-        return topIndex == -1;
-    }
-
-    int size() {
-        return topIndex + 1;
+        return ll.empty();
     }
 };
 
 int main() {
 
-    Stack s;
+    list ll;
 
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    s.push(40);
+    ll.push(10);
+    ll.push(20);
+    ll.push(30);
+    ll.push(40);
 
-    cout << "Top element: " << s.top() << endl;
+    cout << "Top element: " << ll.front() << endl;
 
-    s.pop();
+    ll.pop();
 
-    cout << "Top element after pop: " << s.top() << endl;
+    cout << "Top element after pop: " << ll.front() << endl;
 
     cout << "\nPopping all elements:\n";
 
-    while (!s.empty()) {
-        cout << s.top() << endl;
-        s.pop();
+    while (!ll.empty()) {
+        cout << ll.front() << endl;
+        ll.pop_front();
     }
 
-    cout << "Size: " << s.size() << endl;
+    if (ll.empty()) {
+        cout << "Stack is empty" << endl;
+    }
 
     return 0;
 }
+
+
+//  using stl 
+
+
+
+// stack<int>st;
+
+// st.push(20);
+// st.push(30);
+// st.push(40);
+
+// while(!st.empty())  {
+//        cout<<st.top()<< endl;
+//        st.pop();
+// }
+
