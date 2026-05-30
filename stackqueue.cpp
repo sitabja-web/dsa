@@ -63,7 +63,7 @@ public:
             cout << "Stack is Empty" << endl;
             return -1;
         }
-        return v.back();
+        return v[v.size() - 1];
     }
 
     bool empty() {
@@ -100,6 +100,83 @@ int main() {
     } else {
         cout << "Stack is not empty" << endl;
     }
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+class Stack {
+private:
+    int arr[100];
+    int topIndex;
+
+public:
+    Stack() {
+        topIndex = -1;
+    }
+
+    void push(int val) {
+        if (topIndex == 99) {
+            cout << "Stack Overflow" << endl;
+            return;
+        }
+
+        arr[++topIndex] = val;
+    }
+
+    void pop() {
+        if (topIndex == -1) {
+            cout << "Stack Underflow" << endl;
+            return;
+        }
+
+        topIndex--;
+    }
+
+    int top() {
+        if (topIndex == -1) {
+            cout << "Stack is Empty" << endl;
+            return -1;
+        }
+
+        return arr[topIndex];
+    }
+
+    bool empty() {
+        return topIndex == -1;
+    }
+
+    int size() {
+        return topIndex + 1;
+    }
+};
+
+int main() {
+
+    Stack s;
+
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(40);
+
+    cout << "Top element: " << s.top() << endl;
+
+    s.pop();
+
+    cout << "Top element after pop: " << s.top() << endl;
+
+    cout << "\nPopping all elements:\n";
+
+    while (!s.empty()) {
+        cout << s.top() << endl;
+        s.pop();
+    }
+
+    cout << "Size: " << s.size() << endl;
 
     return 0;
 }
