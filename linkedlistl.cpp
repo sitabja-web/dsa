@@ -8,3 +8,5 @@
 // Lifetime	Function scope	Until deleted
 // Access	Direct	Pointer-based
 // Used In	Local variables	Linked Lists, Trees, Graphs
+
+
